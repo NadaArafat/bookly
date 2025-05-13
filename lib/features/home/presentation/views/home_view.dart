@@ -9,7 +9,8 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset(AssetsData.logo),
+        automaticallyImplyLeading: false,
+        title: Image.asset(AssetsData.logo, width: 100),
         actions: [Icon(Icons.search)],
       ),
       body: HomeViewBody(),
